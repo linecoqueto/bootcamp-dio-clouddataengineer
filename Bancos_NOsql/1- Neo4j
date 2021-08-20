@@ -1,0 +1,37 @@
+
+-- criando um nó : CREATE
+CREATE (:create {name: "Bob esponja", age: 29, hobbies: ['comer,ler,passear']})
+
+-- consultar um nó : MATCH
+MATCH (variavel) return variavel
+
+-- criando os nós com relationamento 
+CREATE(:Client {name: "Douglas", age: 33, hobbies: ['jogar futebol,comer,cinema']}) -[:Bloqueado]-> (:Client {name: "Luiz", hobbies: ['jogar futebol']})
+
+/*
+-[:Bloqueado]-> :: isso refere-se a criação do relacionamento, e estou criando uma label para este relacionamento
+*/
+
+-- criar um relacionamento de dois nós que já existem
+MATCH (<variavel que eu desejo atribuir o resultado do match>:<label>{<onde possui esta propriedade>}), (Douglas:Client{name:"Douglas"}) CREATE(Luiz)-[:Bloqueado]->(Douglas)
+
+MATCH (Aline:Client{name:"Aline"}), (luiz:Client{name:"Luiz"}) CREATE(Aline)-[:Bloqueado]->(Aline)
+
+
+-- excluir um relacionamento
+MATCH(Douglas:Client {name: "Aline"})-[relaciona:Bloqueado]-() DELETE relaciona
+/*
+-primeira parte: nó pai
+-DELETE podemos deletar relacionamentos ou nó
+*/
+
+-- excluir o nó
+MATCH (aline:Client {name: "Aline"}) DELETE aline;
+
+
+-- atualizar um nó do nosso nó
+MATCH (Luiz: Client {name: "Luiz"}) SET Luiz.hobbies = ['aaa,bbb,ccc'];
+
+
+-- atualizar uma label
+MATCH (Luiz:Client {name: "Luiz}) SET Luiz:<nova label que queremos atribuir>;
