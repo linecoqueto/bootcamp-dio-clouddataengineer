@@ -1,0 +1,48 @@
+-- listar databases:
+show databases;
+
+-- criar um database:
+use aula_dio;
+
+-- criar uma collection:
+use aula_dio;
+
+db.createCollection("nome_collection","json_com_configuracoes");
+db.createCollection("teste",{copped: true, max:2, size:2});
+
+-- verificar uma collection
+show collections;
+
+-- inserindo UM documento e retorna o ID do documento criado
+db.test.insertOne({"nome": "Teste 1"})
+db.test.insertOne({"nome": "Teste 2"})
+db.test.insertOne({"nome": "Teste 3"}) /*como criei a collection com as configurações limitando a 2, não vai dar erro ao executar esse registro, porém o registro mais antigo será expirado*/
+
+-- inserindo MAIS de um, esse processo chama-se BULK WRITER
+db.clients.insert([{"nome":"Aline", "age":29}, {"nome": "Douglas"}])
+
+-- atualizar um documento
+db.clients.update({"name": "Douglas"}, {$set : {"age":32}})
+/*
+primeiro paramentro "where" - quem eu quero atualizar
+set indicacao para atualizacao
+ultimo parametro é o novo valor
+*/
+
+-- atualizar varios de uma vez
+db.clients.updateMany({<documentos de match - 'where'>},{$set: {<novo valor>}});
+
+-- listar todos os documentos
+db.clients.find({});
+
+-- listar filtrando os documentos
+db.clients.find({"age": 29});
+
+-- listar filtrando os documentos e limitando o resultado
+db.clients.find({"age": 29}).limit;
+
+-- listar filtrando com IN : retorna uma lista de valores com match
+db.clients.find({"age": {$in: [30, 41]}});
+
+----> muitos mais comandos disponíveis em:
+docs.mongodb.com
