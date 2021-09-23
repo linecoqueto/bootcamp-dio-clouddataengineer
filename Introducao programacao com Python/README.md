@@ -18,10 +18,12 @@ O curso trará todo o embasamento da linguagem linguagem Python, quando e onde �
 - Exceções customizadas (try, except, else e finally)
 
 
-### Exercícios praticados
+### Exercícios praticados:
 Pycharm
 
 
-### Badge
+### Certificado de Conclusão:
 
-https://badgr.com/public/assertions/eA2DRxROQbiD_uMK49Mnlw
+<img src="https://user-images.githubusercontent.com/64856676/134575037-e1cf90a2-764e-4b55-9438-abdc79346bc6.png" width="400">
+
+
