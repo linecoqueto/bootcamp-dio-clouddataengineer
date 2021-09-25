@@ -9,9 +9,27 @@ deixa-los prontos para meus projetos, utilizando Python
 ### O que foi aprendido:
 - Fundamentos de ETL (conceitos, ferramentas e pacotes)
 - Extração de dados csv (pandas)
+  * read_csv
+  * pesquisar usando o Loc
+  * head()
 - Validação dos dados (pandera)
+  * schema
+  * validade
 - Limpeza dos dados
+  * replace()
+  * isna()
+  * isnull()
+  * fillna()
+  * drop()
+  * dropna()
+  * drop_duplicates()
 - Transformação dos dados
+  * count()
+  * sum()
+  * size()
+  * sort_values()
+  * groupby()
+  * filtros (operador & (and), | (or), contains (contém), isin (faz parte de uma lista))
 
 
 ### Exercícios praticados
