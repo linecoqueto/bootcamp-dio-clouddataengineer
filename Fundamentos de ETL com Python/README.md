@@ -42,6 +42,6 @@ deixa-los prontos para meus projetos, utilizando Python
 
 ### Certificado de Conclusão:
 
-<img src="" width="400">
+<img src="https://user-images.githubusercontent.com/64856676/134933230-9e294d7c-673f-4bda-882b-914ce6d4bf86.png" width="400">
 
 
