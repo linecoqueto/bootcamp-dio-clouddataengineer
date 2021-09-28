@@ -1,6 +1,10 @@
-# Fundamentos de ETL com Python
+# Análise de dados com Python e Pandas
 
-Praticando os comandos aprendidos nas aulas de Python, através do projeto de livre tema proposto.
+Nesse Labs será apresentado a biblioteca Pandas, uma biblioteca Python de código aberto para análise de dados.
+Ela dá ao Python a capacidade de trabalhar com dados do tipo planilha, permitindo carregar, manipular e combinar dados 
+rapidamente, entre outras função.
+
+A partir do conteúdo proposto foi desenvolvido meu projeto, baseado nos dados do ano de 2020 sobre focos de queimadas no Brasil.
 
 ### Projeto desenvolvido através
 - Google Colab
